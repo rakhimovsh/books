@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./icons/style.css" />
+    <link rel="icon" href="./images/logoIcon.svg" />
+    <title>БИБЛИОТЕЧНАЯ</title>
+  </head>
+  <body>
+    <header class="container pt-4 pb-4">
+      <nav class="header__navbar">
+        <a href="#" class="header__logo"
+          ><img
+            src="./images/logo.svg"
+            alt="site logotipe"
+            width="177"
+            height="42"
+        /></a>
+        <input type="checkbox" id="toggler" />
+        <label class="header__label" for="toggler"
+          ><i class="icon-hamburger"></i>
+        </label>
+        <div class="header__menu">
+          <ul class="header__list">
+            <li>
+              <input
+                class="header__input--item"
+                type="text"
+                placeholder="Поиск"
+              />
+            </li>
+            <li><a class="header__link" href="#">Акции</a></li>
+            <li><a class="header__link" href="#">Каталлог</a></li>
+            <li><a class="header__link" href="#">Доставка</a></li>
+            <li><a class="header__link" href="#">О магазине</a></li>
+            <li><a class="header__link" href="#">Блог</a></li>
+          </ul>
+        </div>
+        <div class="header__wrapper"></div>
+        <input class="header__input" type="text" placeholder="Поиск" />
+        <a
+          class="text-decoration-none header__tel"
+          href="tel:+38-(071)-339-16-26"
+          >+38 (071) 339-16-26</a
+        >
+        <div class="d-flex align-items-center header__collection">
+          <button class="header__btn"><i class="icon-icons_heart"></i></button>
+          <button class="header__btn"><i class="icon-cart"></i></button>
+          <div class="dropdown">
+            <a
+              class="nav-link text-black dropdown-toggle fs-6"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              2 228 грн.
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <script src="./bootstrap/main.js"></script>
+  </body>
 </html>
