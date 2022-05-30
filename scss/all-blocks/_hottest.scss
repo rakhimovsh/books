@@ -1,0 +1,87 @@
+.hottest {
+  &__title {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 196.19%;
+  }
+  &__btn {
+    padding: 10px 11px;
+    border: none;
+    background-color: #e16a00;
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 196.19%;
+  }
+  &__heart {
+    color: #e16a00;
+    font-size: 29px;
+  }
+  &__controllers {
+    border: none !important;
+    box-shadow: none !important;
+    & i {
+      font-size: 30px;
+      color: black;
+    }
+    &:nth-child(1) {
+      left: -10px;
+    }
+    &:nth-child(2) {
+      right: -10px;
+    }
+  }
+  &__list {
+    gap: 15px;
+  }
+}
+
+.hottest__CardItem {
+  width: 185px;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  & img {
+    height: 190px;
+  }
+}
+.glide__cost {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 196.19%;
+}
+.glide__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 196.19%;
+}
+.glide__desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+}
+
+@media screen and (max-width: 992px) {
+  .hottest {
+    &__head {
+      flex-wrap: wrap;
+    }
+    &__list li:nth-child(2) {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hottest {
+    &__list li:nth-child(5) {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 457px) {
+  .hottest {
+    &__list li:nth-child(6) {
+      display: none;
+    }
+  }
+}

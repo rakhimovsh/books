@@ -1,0 +1,34 @@
+.about {
+  &__list {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  &__item {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 196.19%;
+    color: #241400;
+    & h3 {
+      margin-right: 27px;
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 196.19%;
+      color: #241400;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .about {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 532px) {
+  .about {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

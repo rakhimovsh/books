@@ -1,0 +1,17 @@
+.network {
+  &__collection {
+    & i {
+      font-size: 63px;
+    }
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .network {
+    &__collection {
+      & i {
+        font-size: 35px;
+      }
+    }
+  }
+}
